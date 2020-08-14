@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeItemCell" customModule="PhotosEditer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoTemp2" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-f1-xT7">
+                        <rect key="frame" x="3" y="3" width="253" height="258"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_selected" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-aS-rLV">
+                        <rect key="frame" x="227" y="7" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="AiJ-zY-Wgu"/>
+                            <constraint firstAttribute="width" secondItem="TcF-aS-rLV" secondAttribute="height" multiplier="1:1" id="Ijs-hb-ZTH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="e1s-f1-xT7" secondAttribute="trailing" constant="3" id="7Mw-4U-T2k"/>
+                <constraint firstAttribute="bottom" secondItem="e1s-f1-xT7" secondAttribute="bottom" constant="3" id="AaM-M0-46I"/>
+                <constraint firstAttribute="trailing" secondItem="TcF-aS-rLV" secondAttribute="trailing" constant="7" id="ZMH-T7-bKK"/>
+                <constraint firstItem="TcF-aS-rLV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="cQt-Ln-Sp5"/>
+                <constraint firstItem="e1s-f1-xT7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="muI-wG-q4X"/>
+                <constraint firstItem="e1s-f1-xT7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="qyh-eI-qez"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="259" height="264"/>
+            <connections>
+                <outlet property="imgSelectedIcon" destination="TcF-aS-rLV" id="U2A-Ub-7yF"/>
+                <outlet property="imgThumbnil" destination="e1s-f1-xT7" id="Crx-bA-K7N"/>
+            </connections>
+            <point key="canvasLocation" x="-52.898550724637687" y="156.02678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_selected" width="50" height="50"/>
+        <image name="videoTemp2" width="480" height="360"/>
+    </resources>
+</document>

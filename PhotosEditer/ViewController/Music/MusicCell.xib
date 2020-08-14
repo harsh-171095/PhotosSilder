@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicCell" id="KGk-i7-Jjw" customClass="MusicCell" customModule="PhotosEditer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0i-v4-QVC">
+                        <rect key="frame" x="15" y="16" width="235" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathura Ma Vagi Morli(DJSathi).mp3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-YK-5U0">
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hhs-YK-5U0" firstAttribute="top" secondItem="T0i-v4-QVC" secondAttribute="top" id="BGL-g6-PGh"/>
+                            <constraint firstAttribute="bottom" secondItem="hhs-YK-5U0" secondAttribute="bottom" id="GaT-QI-Zbe"/>
+                            <constraint firstItem="hhs-YK-5U0" firstAttribute="leading" secondItem="T0i-v4-QVC" secondAttribute="leading" id="iZq-gs-bRz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-ZN-uHK">
+                        <rect key="frame" x="265" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1in-Dn-jXl"/>
+                            <constraint firstAttribute="width" secondItem="OdZ-ZN-uHK" secondAttribute="height" multiplier="1:1" id="OvW-KD-9Hv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="OdZ-ZN-uHK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="C3A-AG-vmx"/>
+                    <constraint firstItem="OdZ-ZN-uHK" firstAttribute="leading" secondItem="T0i-v4-QVC" secondAttribute="trailing" constant="15" id="Fge-Td-Z0L"/>
+                    <constraint firstItem="T0i-v4-QVC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YOs-Lv-Kn6"/>
+                    <constraint firstItem="T0i-v4-QVC" firstAttribute="centerY" secondItem="OdZ-ZN-uHK" secondAttribute="centerY" id="aKr-hp-Tpd"/>
+                    <constraint firstAttribute="bottom" secondItem="OdZ-ZN-uHK" secondAttribute="bottom" constant="5" id="kbD-3a-FxU"/>
+                    <constraint firstAttribute="trailing" secondItem="OdZ-ZN-uHK" secondAttribute="trailing" constant="15" id="yZn-MO-pgJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblMusicTitle" destination="hhs-YK-5U0" id="jeR-QP-V2d"/>
+                <outlet property="viewIsPlay" destination="OdZ-ZN-uHK" id="QHx-oz-olc"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

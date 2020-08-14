@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LoadingCustomView" id="iN0-l3-epB" customClass="LoadingCustomView" customModule="PhotosEditer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W65-Rp-HiW">
+                    <rect key="frame" x="140" y="286" width="95" height="95"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-yQ-CEV">
+                            <rect key="frame" x="30" y="30" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="6gB-YA-knC"/>
+                                <constraint firstAttribute="width" secondItem="kqN-yQ-CEV" secondAttribute="height" multiplier="1:1" id="uuj-mo-B45"/>
+                            </constraints>
+                            <color key="color" red="1" green="0.58792503949999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kqN-yQ-CEV" secondAttribute="bottom" constant="30" id="3NH-gy-znn"/>
+                        <constraint firstAttribute="trailing" secondItem="kqN-yQ-CEV" secondAttribute="trailing" constant="30" id="C3A-pL-aVK"/>
+                        <constraint firstItem="kqN-yQ-CEV" firstAttribute="leading" secondItem="W65-Rp-HiW" secondAttribute="leading" constant="30" id="vmn-TE-cb7"/>
+                        <constraint firstItem="kqN-yQ-CEV" firstAttribute="top" secondItem="W65-Rp-HiW" secondAttribute="top" constant="30" id="xeW-1b-kCi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W65-Rp-HiW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YEp-l2-9xr"/>
+                <constraint firstItem="W65-Rp-HiW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ceD-aP-FpG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="viewContent" destination="W65-Rp-HiW" id="cpF-TW-y3e"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="117.39130434782609"/>
+        </view>
+    </objects>
+</document>
